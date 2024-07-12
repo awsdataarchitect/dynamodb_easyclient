@@ -1,0 +1,61 @@
+name: dynamodb_easyclient
+description: DynamoDb Client for Mobile to manage your DynamoDb tables
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.11.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # for firebase, authentication, cloud datbase, storage, messaging, analytics
+  firebase_auth: ^3.3.4
+  cloud_firestore: ^3.1.5
+  firebase_core: ^1.10.6
+  google_sign_in: ^5.2.1
+  the_apple_sign_in: ^1.1.1
+
+  provider: ^6.0.1
+  font_awesome_flutter: ^9.2.0
+  flutter_spinkit: ^5.1.0
+  fluttertoast: ^8.0.8
+  email_validator: ^2.0.1
+  # google_fonts:
+  syncfusion_flutter_datagrid: 
+  document_client: ^1.0.0
+  flutter_menu: 
+  flutter_json_viewer: 
+  flutter_widget_from_html_core: 
+  pretty_json:
+  text:
+  code_text_field:
+  custom_pop_up_menu: ^1.2.2
+  # hovering: ^1.0.4
+  url_launcher: ^6.0.12
+  downloads_path_provider: ^0.1.0
+  in_app_purchase: ^3.0.1
+  # aws_dynamodb_api: ^1.2.0
+  file_picker:
+
+dependency_overrides:
+  # intl: ^0.17.0
+  # http: ^0.13.4
+  # google_fonts: ^2.1.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+ 
