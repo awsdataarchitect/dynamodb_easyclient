@@ -13,8 +13,8 @@ This below example demonstrates how to perform basic read operations on Amazon D
 
             import 'package:document_client/document_client.dart';
 
-dart:convert: Provides encoding and decoding for JSON.
-document_client: A package that simplifies interactions with DynamoDB.
+     dart:convert: Provides encoding and decoding for JSON.
+     document_client: A package that simplifies interactions with DynamoDB.
 
 - 2. Main Function
 
@@ -22,8 +22,8 @@ document_client: A package that simplifies interactions with DynamoDB.
 
             final dc = DocumentClient(region: 'eu-west-1');
 
-The main function is declared as async to handle asynchronous operations.
-DocumentClient is initialized with the specified AWS region (eu-west-1).
+     The main function is declared as async to handle asynchronous operations.
+     DocumentClient is initialized with the specified AWS region (eu-west-1).
 
 - 3. Single Get Request
 
@@ -37,10 +37,10 @@ DocumentClient is initialized with the specified AWS region (eu-west-1).
 
          print(jsonEncode(getResponse.item)); // e.g. { "wheels": 24, "units": "inch" }
 
-A single get request is made to the DynamoDB table named MyTable.
-The request fetches an item with the primary key {'Car': 'DudeWheresMyCar'}.
-The response item is printed in JSON format. 
-An example output could be {"wheels": 24, "units": "inch"}.
+     A single get request is made to the DynamoDB table named MyTable.
+     The request fetches an item with the primary key {'Car': 'DudeWheresMyCar'}.
+     The response item is printed in JSON format. 
+     An example output could be {"wheels": 24, "units": "inch"}.
 
 - 4. Batch Get Request
 
@@ -74,10 +74,10 @@ An example output could be {"wheels": 24, "units": "inch"}.
 
          print(jsonEncode(batchGetResponse.responses));
 
-A batchGet request retrieves items from multiple tables (Table-1 and Table-2).
-For Table-1, it fetches items using keys {'HashKey': 'hashkey', 'NumberRangeKey': 1}.
-For Table-2, it fetches items using keys {'foo': 'bar'}.
-The response, which includes items from both tables, is printed in JSON format.
+     A batchGet request retrieves items from multiple tables (Table-1 and Table-2).
+     For Table-1, it fetches items using keys {'HashKey': 'hashkey', 'NumberRangeKey': 1}.
+     For Table-2, it fetches items using keys {'foo': 'bar'}.
+     The response, which includes items from both tables, is printed in JSON format.
 
 ## Getting Started
 
